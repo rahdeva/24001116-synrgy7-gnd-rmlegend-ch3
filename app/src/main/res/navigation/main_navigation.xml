@@ -20,14 +20,14 @@
         android:name="com.rahdeva.rmlegend.legends.LegendsFragment"
         android:label="fragment_legends"
         tools:layout="@layout/fragment_legends">
-<!--        <argument-->
-<!--            android:name="letter"-->
-<!--            app:argType="string"-->
-<!--            android:defaultValue="" />-->
-<!--        <argument-->
-<!--            android:name="legends"-->
-<!--            app:argType="string[]"-->
-<!--            android:defaultValue="@null"-->
-<!--            app:nullable="true" />-->
+        <argument
+            android:name="letter"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="legends"
+            app:argType="string[]"
+            android:defaultValue="@null"
+            app:nullable="true" />
     </fragment>
 </navigation>
