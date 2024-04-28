@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rahdeva.rmlegend.R
 import com.rahdeva.rmlegend.databinding.FragmentAlphabetBinding
@@ -43,9 +42,9 @@ class AlphabetFragment : Fragment() {
         getParentFragmentManager().beginTransaction()
             .replace(R.id.alphabet_container, legendsFragment)
             .commit()
-        val actionToLegendFragment = AlphabetFragmentDirections
-            .actionAlphabetFragmentToLegendsFragment()
-        findNavController().navigate(actionToLegendFragment)
+//        val actionToLegendFragment = AlphabetFragmentDirections
+//            .actionAlphabetFragmentToLegendsFragment()
+//        findNavController().navigate(actionToLegendFragment)
     }
 
     companion object {
