@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/alphabetFragment">
+
+    <fragment
+        android:id="@+id/alphabetFragment"
+        android:name="com.rahdeva.rmlegend.alphabet.AlphabetFragment"
+        android:label="fragment_alphabet"
+        tools:layout="@layout/fragment_alphabet" >
+        <action
+            android:id="@+id/action_alphabetFragment_to_legendsFragment"
+            app:destination="@id/legendsFragment"
+            app:popUpTo="@id/legendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/legendsFragment"
+        android:name="com.rahdeva.rmlegend.legends.LegendsFragment"
+        android:label="fragment_legends"
+        tools:layout="@layout/fragment_legends">
+<!--        <argument-->
+<!--            android:name="letter"-->
+<!--            app:argType="string"-->
+<!--            android:defaultValue="" />-->
+<!--        <argument-->
+<!--            android:name="legends"-->
+<!--            app:argType="string[]"-->
+<!--            android:defaultValue="@null"-->
+<!--            app:nullable="true" />-->
+    </fragment>
+</navigation>
